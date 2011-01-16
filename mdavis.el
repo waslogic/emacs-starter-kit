@@ -47,7 +47,7 @@
 ;; REQUIRES
 (add-to-list 'load-path (concat dotfiles-dir "/vendor"))
 (if (boundp 'erlang-root-dir) (require 'erlang-start))
-(require 'growl)
+(if (executable-find "growlnotify") (require 'growl))
 (require 'rspec-mode) ; TODO: use growl to notify on finish
 (require 'ruby-hacks) ; NOTE: really only interested in the hide-show overlay stuff
 

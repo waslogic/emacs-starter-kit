@@ -20,6 +20,7 @@
 (setq bookmark-default-file "~/.emacs.d/bookmarks"
       bookmark-save-flag 1)
 (setq org-log-done t)
+(setq org-startup-indented t)
 (setq-default fill-column 140)
 
 ;; FRAMES

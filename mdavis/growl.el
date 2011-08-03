@@ -26,8 +26,10 @@
 
 ;;; Code:
 
-(unless (executable-find "growlnotify")
-  (error "growl.el requires that you install the `growlnotify' program.")n)
+;; NOTE: Rather than throw an error here, I'm going to instead use the
+;;       executable-find in mdavis.el to conditionally require growl
+;; (unless (executable-find "growlnotify")
+;;   (error "growl.el requires that you install the `growlnotify' program.")n)
 
 (defun growl (message &optional subject sticky)
   "Notify the user of something via Growl."

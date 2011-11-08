@@ -44,6 +44,7 @@
 (add-hook 'javascript-mode-hook 'hs-minor-mode)
 (add-hook 'espresso-mode-hook 'hs-minor-mode)
 (add-hook 'org-mode-hook 'hl-line-mode)
+(add-hook 'graphviz-dot-mode-hook 'hl-line-mode)
 
 ;; REQUIRES
 (add-to-list 'load-path (concat dotfiles-dir "/vendor"))

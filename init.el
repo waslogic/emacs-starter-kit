@@ -32,6 +32,7 @@
 
 (require 'package)
 (dolist (source '(("technomancy" . "http://repo.technomancy.us/emacs/")
+                  ("melpa" . "http://melpa.milkbox.net/packages/")
                   ("elpa" . "http://tromey.com/elpa/")))
   (add-to-list 'package-archives source t))
 (package-initialize)
